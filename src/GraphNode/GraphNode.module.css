@@ -1,0 +1,75 @@
+.graphNode,
+.edgePicker {
+    display: flex;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 7px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.301) 0px 0px 5px 0px;
+}
+
+.graphNodeContainer {
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 40px;
+}
+
+.graphNodeContainer > .addButton {
+    margin: 7px;
+
+    border-radius: 10px;
+    border: 2px solid gray;
+    width: 1.2em;
+    height: 1.2em;
+    aspect-ratio: 1/1;
+}
+
+.graphNode {
+    flex-direction: row;
+    margin: 7px;
+}
+
+.edgePicker {
+    flex-direction: column;
+    position: absolute;
+}
+
+.screenCover {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.graphNode > div,
+.edgePicker > div {
+    background-color: white;
+    width: 1.2em;
+    height: 1.2em;
+    text-align: center;
+}
+
+.nodeEdge:hover,
+.addButton:hover {
+    background-color: lightgray;
+}
+
+.edgePicker > .addButton {
+    background-color: lightgray;
+    border-bottom: 2px solid lightgray;
+}
+.addButton {
+    text-align: center;
+}
+
+.nodeData:not(:only-child) {
+    border-right: 2px solid lightgray;
+}
+
+.nodeData {
+    aspect-ratio: 1/1;
+}
