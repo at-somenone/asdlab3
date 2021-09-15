@@ -50,6 +50,7 @@
     background-color: white;
     width: 1.2em;
     height: 1.2em;
+    aspect-ratio: 1/1;
     text-align: center;
 }
 
@@ -62,6 +63,7 @@
     background-color: lightgray;
     border-bottom: 2px solid lightgray;
 }
+
 .addButton {
     text-align: center;
 }
